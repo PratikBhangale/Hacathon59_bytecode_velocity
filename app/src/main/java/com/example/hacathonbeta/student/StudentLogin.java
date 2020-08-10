@@ -64,7 +64,6 @@ public class StudentLogin extends AppCompatActivity {
 
     private void progressbarinit() {
         bar1=(ProgressBar) findViewById(R.id.bar12);
-
     }
 
     private void check_details_and_login() {

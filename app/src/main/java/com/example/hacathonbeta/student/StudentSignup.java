@@ -23,7 +23,7 @@ public class StudentSignup extends AppCompatActivity {
     private Button but1;
     private EditText email,password;
     private TextView tosignup;
-    private String email1,password1;
+    private String email2,password2;
     FirebaseAuth mAuth;
     ProgressBar bar1;
     @Override
@@ -43,39 +43,42 @@ public class StudentSignup extends AppCompatActivity {
                 bar1.setVisibility(View.VISIBLE);
             }
         });
+        progressbarinit();
     }
+
+
     private void progressbarinit() {
         bar1=(ProgressBar) findViewById(R.id.bar);
     }
 
     private void check_and_signup() {
-        email1=email.getText().toString().trim();
-        password1=password.getText().toString().trim();
+        email2 = email.getText().toString().trim();
+        password2 = password.getText().toString().trim();
 
-        if(email1.isEmpty()){
+        if (email2.isEmpty()) {
             Toast.makeText(this, "Please enter an Email address", Toast.LENGTH_SHORT).show();
             email.requestFocus();
         }
-        if(password1.isEmpty()){
+        if (password2.isEmpty()) {
             Toast.makeText(this, "Please enter an Password", Toast.LENGTH_SHORT).show();
             password.requestFocus();
         }
-        if(!Patterns.EMAIL_ADDRESS.matcher(email1).matches()){
+        if (!Patterns.EMAIL_ADDRESS.matcher(email2).matches()) {
             email.setError("Please enter a valid Email address.");
             email.requestFocus();
         }
 
-        mAuth.createUserWithEmailAndPassword(email1,password1).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        mAuth.createUserWithEmailAndPassword(email2, password2).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
-                    bar1.setVisibility(View.INVISIBLE);
+                if (task.isSuccessful()) {
                     gotohome();
-                    Toast.makeText(StudentSignup.this, "You have successfully logged in.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(StudentSignup.this, "Signup Successful", Toast.LENGTH_SHORT).show();
                 }
-                else{
-                    Toast.makeText(StudentSignup.this, "Unable to log you in.", Toast.LENGTH_SHORT).show();
+                else {
+                    Toast.makeText(StudentSignup.this, "Signup Uncessful", Toast.LENGTH_SHORT).show();
                 }
+                bar1.setVisibility(View.INVISIBLE);
             }
         });
     }

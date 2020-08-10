@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "264399847560",
+    "firebase_url": "https://hacathon-beta.firebaseio.com",
+    "project_id": "hacathon-beta",
+    "storage_bucket": "hacathon-beta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264399847560:android:f6f759f6ba79fd9cc09f3d",
+        "android_client_info": {
+          "package_name": "com.example.hacathonbeta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264399847560-sch5urfg9ub1ofokh76aj4i3e9629idp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hacathonbeta",
+            "certificate_hash": "717ab8160294a6d07a378154400f1eceabcf37d7"
+          }
+        },
+        {
+          "client_id": "264399847560-23d1bqa38q9smqtblsfi7lahe2qglj5v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWafCwuc5L-XeXPyf2JwIn9M1HJBPPdsg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264399847560-23d1bqa38q9smqtblsfi7lahe2qglj5v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

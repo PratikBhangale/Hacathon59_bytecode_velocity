@@ -24,7 +24,6 @@ import com.google.firebase.auth.FirebaseAuth;
 public class DriverLogin extends AppCompatActivity {
     private Button but1;
     private EditText email,password;
-    private TextView tosignup;
     private String email1,password1;
     FirebaseAuth mAuth;
     ProgressBar bar1;
@@ -38,14 +37,7 @@ public class DriverLogin extends AppCompatActivity {
         but1=(Button) findViewById(R.id.button);
         email=(EditText) findViewById(R.id.editTextTextEmailAddress);
         password=(EditText) findViewById(R.id.editTextTextPassword);
-        tosignup=(TextView) findViewById(R.id.textView2);
 
-        tosignup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                tostudentsignup();
-            }
-        });
 
         but1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,9 +48,6 @@ public class DriverLogin extends AppCompatActivity {
             }
         });
         progressbarinit();
-    }
-    private void tostudentsignup() {
-        startActivity(new Intent(DriverLogin.this, StudentSignup.class));
     }
 
 

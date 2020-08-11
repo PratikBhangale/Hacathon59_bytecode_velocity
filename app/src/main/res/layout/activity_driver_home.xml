@@ -15,4 +15,16 @@
         android:layout_marginTop="77dp"
         android:text="Driver Home"
         android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="369dp"
+        android:text="Profile"
+        android:textSize="24sp" />
 </RelativeLayout>

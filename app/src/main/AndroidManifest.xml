@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".driver.DriverHome"></activity>
+        <activity android:name=".driver.DriverProfile"></activity>
+        <activity android:name=".driver.EditDriverProfile"
+            android:parentActivityName=".driver.DriverProfile"/>
+        <activity android:name=".driver.DriverHome" />
         <activity android:name=".student.StudentSignup" />
         <activity android:name=".student.StudentHome" />
         <activity android:name=".driver.DriverLogin" />

@@ -87,9 +87,9 @@ public class StudentLogin extends AppCompatActivity {
         mAuth.signInWithEmailAndPassword(email1,password1).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
-                    bar1.setVisibility(View.INVISIBLE);
+                bar1.setVisibility(View.INVISIBLE);
 
+                if(task.isSuccessful()){
                     gotohome();
                     Toast.makeText(StudentLogin.this, "You have successfully logged in.", Toast.LENGTH_SHORT).show();
                 }

@@ -22,8 +22,8 @@ import java.util.Objects;
 
 public class EditDriverProfile extends AppCompatActivity {
     private EditText name, number;
-    private FirebaseFirestore db;
-    private FirebaseAuth kAuth;
+    FirebaseFirestore db;
+    FirebaseAuth kAuth;
     private String names, numbers;
     Button save;
     @Override

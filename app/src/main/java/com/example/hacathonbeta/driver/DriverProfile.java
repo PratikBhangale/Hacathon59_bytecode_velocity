@@ -22,10 +22,12 @@ import java.util.Objects;
 
 public class DriverProfile extends AppCompatActivity {
 
-    private FirebaseAuth mAuth;
-    private FirebaseFirestore db;
-    private Task<DocumentSnapshot> mRef;
-    TextView name,bus,edit;
+    FirebaseAuth mAuth;
+    FirebaseFirestore db;
+    Task<DocumentSnapshot> mRef;
+    private TextView name;
+    private TextView bus;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +36,7 @@ public class DriverProfile extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
         name = (TextView) findViewById(R.id.textView7);
         bus = (TextView) findViewById(R.id.textView8);
-        edit = (TextView) findViewById(R.id.textView9);
+        TextView edit = (TextView) findViewById(R.id.textView9);
 
         edit.setOnClickListener(new View.OnClickListener() {
             @Override

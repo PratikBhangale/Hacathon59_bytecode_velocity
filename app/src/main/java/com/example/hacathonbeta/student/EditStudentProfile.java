@@ -22,11 +22,10 @@ import java.util.Map;
 import java.util.Objects;
 
 public class EditStudentProfile extends AppCompatActivity {
-// commit troubleshoot branch
+
     private EditText name,route,addr;
-    private Button but1;
-    FirebaseFirestore mRef = FirebaseFirestore.getInstance();
-    FirebaseAuth mAuth = FirebaseAuth.getInstance();
+    private FirebaseFirestore mRef = FirebaseFirestore.getInstance();
+    private FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +35,7 @@ public class EditStudentProfile extends AppCompatActivity {
         name = (EditText) findViewById(R.id.editTextPersonName);
         route = (EditText) findViewById(R.id.editTextbusroute);
         addr = (EditText) findViewById(R.id.editTextbusstop);
-        but1 = (Button) findViewById(R.id.button5);
+        Button but1 = (Button) findViewById(R.id.button5);
 
         but1.setOnClickListener(new View.OnClickListener() {
             @Override

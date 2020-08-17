@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.example.hacathonbeta.R;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
@@ -23,17 +25,34 @@ public class UserListActivity extends AppCompatActivity {
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private CollectionReference complaintref = db.collection("Drivers");
     DriverListAdapter driverListAdapter;
+    private TextView bus,id;;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_list);
+        setupRecyclerview();
 
-    setupRecyclerview();
+        bus = (TextView) findViewById(R.id.textView17);
+        id = (TextView) findViewById(R.id.textView18);
 
 
+        driverListAdapter.setOnItemClickListener(new DriverListAdapter.OnItemClickListener() {
+            @Override
+            public void onClickItem(DocumentSnapshot documentSnapshot, int position) {
+                Driver driver = documentSnapshot.toObject(Driver.class);
+                String bus_id1 = documentSnapshot.getString("bus");
+                String id1 = documentSnapshot.getId();
+                Intent intent = new Intent(UserListActivity.this,AllMapsActivity.class);
+                intent.putExtra("bus_number",bus_id1);
+                intent.putExtra("driver_UID",id1);
+                startActivity(intent);
+
+                bus.setText(bus_id1);
+                id.setText(id1);
+            }
+        });
     }
-
-
     private void setupRecyclerview() {
         Query query = complaintref.orderBy("date",Query.Direction.ASCENDING);
         FirestoreRecyclerOptions<Driver> options = new FirestoreRecyclerOptions.Builder<Driver>().setQuery(query,Driver.class).build();
@@ -55,4 +74,7 @@ public class UserListActivity extends AppCompatActivity {
         super.onStop();
         driverListAdapter.stopListening();
     }
+
+
+
 }

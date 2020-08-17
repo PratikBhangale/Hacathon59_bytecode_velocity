@@ -80,8 +80,6 @@ public class DriverLogin extends AppCompatActivity {
                     bar1.setVisibility(View.INVISIBLE);
                     gotohome();
                     Toast.makeText(DriverLogin.this, "You have successfully logged in.", Toast.LENGTH_SHORT).show();
-
-
                 }
                 else{
                     Toast.makeText(DriverLogin.this, "Unable to log you in.", Toast.LENGTH_SHORT).show();

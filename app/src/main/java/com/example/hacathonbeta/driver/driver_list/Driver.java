@@ -3,6 +3,7 @@ package com.example.hacathonbeta.driver.driver_list;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import com.google.firebase.firestore.GeoPoint;
 import com.google.firebase.firestore.ServerTimestamp;
 
 import java.util.Date;
@@ -10,22 +11,25 @@ import java.util.Date;
 public class Driver implements Parcelable {
     private String name, bus;
     private @ServerTimestamp Date date = null;
+    private GeoPoint geoPoint;
 
 
     public Driver(){
         //Empty Constructer Required.
     }
 
-    public Driver(String name, String bus, Date date) {
+    public Driver(String name, String bus, Date date, GeoPoint geoPoint) {
         this.name = name;
         this.bus = bus;
         this.date = date;
+        this.geoPoint = geoPoint;
     }
 
     protected Driver(Parcel in) {
         name = in.readString();
         bus = in.readString();
     }
+
 
     public static final Creator< Driver > CREATOR = new Creator< Driver >() {
         @Override
@@ -38,6 +42,14 @@ public class Driver implements Parcelable {
             return new Driver[size];
         }
     };
+
+    public GeoPoint getGeoPoint() {
+        return geoPoint;
+    }
+
+    public void setGeoPoint(GeoPoint geoPoint) {
+        this.geoPoint = geoPoint;
+    }
 
     public Date getDate() {
         return date;
@@ -62,6 +74,7 @@ public class Driver implements Parcelable {
     public void setDate(Date date) {
         this.date = date;
     }
+
 
     @Override
     public int describeContents() {

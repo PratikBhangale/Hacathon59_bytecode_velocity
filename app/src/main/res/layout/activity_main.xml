@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity"
+    android:background="@drawable/background1">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,32 +20,37 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bus Management System"
+            android:text="Bus Tracking System"
             android:textAlignment="center"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:layout_marginTop="50dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"/>
     </LinearLayout>
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="160dp"
+        android:layout_height="68dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="136dp"
-        android:layout_marginBottom="260dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginBottom="261dp"
+        android:background="#0034EE"
         android:text="Driver Login"
         android:textSize="18sp" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="167dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginEnd="126dp"
         android:layout_marginBottom="153dp"
+        android:background="#000CEE"
         android:text="Student Login"
         android:textSize="18sp" />
 

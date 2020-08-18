@@ -4,7 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".driver.DriverProfile">
+    tools:context=".driver.DriverProfile"
+    android:background="@drawable/background1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="573dp"
+        android:text="Profile"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="40dp" />
 
     <TextView
         android:id="@+id/textView7"
@@ -15,7 +27,9 @@
         android:layout_marginBottom="410dp"
         android:hint="Name"
         android:textAlignment="center"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
 
     <TextView
         android:id="@+id/textView8"
@@ -26,7 +40,9 @@
         android:layout_marginBottom="316dp"
         android:hint="Bus ID"
         android:textAlignment="center"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
 
     <TextView
         android:id="@+id/textView9"
@@ -37,5 +53,7 @@
         android:layout_marginBottom="126dp"
         android:text="Click to Change Details."
         android:textAlignment="center"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
 </RelativeLayout>

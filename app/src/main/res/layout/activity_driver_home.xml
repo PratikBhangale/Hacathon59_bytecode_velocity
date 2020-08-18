@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".driver.DriverHome">
+    tools:context=".driver.DriverHome"
+    android:background="@drawable/background1">
 
     <TextView
         android:id="@+id/textView6"
@@ -14,19 +15,25 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="511dp"
         android:text="Driver Home"
-        android:textSize="36sp" />
+        android:textSize="36sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
+        android:layout_width="144dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="144dp"
-        android:layout_marginBottom="299dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginBottom="303dp"
+        android:background="#0020EE"
         android:text="Profile"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
 
     <Button
         android:id="@+id/button8"
@@ -38,6 +45,9 @@
         android:layout_marginEnd="145dp"
         android:layout_marginBottom="164dp"
         android:text="Sign out"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="#0018EE"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
 
 </RelativeLayout>

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".student.StudentHome">
+    tools:context=".student.StudentHome"
+    android:background="@drawable/background1">
 
     <TextView
         android:id="@+id/textView4"
@@ -16,32 +17,46 @@
         android:layout_marginStart="89dp"
         android:layout_marginBottom="528dp"
         android:text="Student Home"
-        android:textSize="36sp" />
+        android:textSize="36sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="wrap_content"
+        android:layout_width="179dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="402dp"
-        android:text="Profile" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="400dp"
+        android:background="#0028EE"
+        android:text="Profile"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="153dp"
+        android:layout_width="172dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="275dp"
-        android:text="Bus List" />
+        android:layout_marginBottom="290dp"
+        android:background="#0020EE"
+        android:text="Bus List"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/button10"
-        android:layout_width="197dp"
-        android:layout_height="60dp"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="149dp"
-        android:text="Chat Support" />
+        android:layout_marginBottom="182dp"
+        android:background="#0020EE"
+        android:text="Chat Support"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20dp" />
 </RelativeLayout>

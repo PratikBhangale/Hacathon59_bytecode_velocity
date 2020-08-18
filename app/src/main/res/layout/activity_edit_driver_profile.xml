@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".driver.EditDriverProfile">
+    tools:context=".driver.EditDriverProfile"
+    android:background="@drawable/background1">
 
 
     <EditText
@@ -16,9 +17,10 @@
         android:ems="10"
         android:hint="Bus"
         android:inputType="textPersonName"
-        android:textColor="#000000"
-        android:textColorHint="#000000"
-        tools:ignore="TextFields" />
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        tools:ignore="TextFields"
+        />
 
     <EditText
         android:id="@+id/editname"
@@ -30,22 +32,22 @@
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
-        android:textColor="#000000"
-        android:textColorHint="#000000" />
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="299dp"
         android:layout_height="85dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="49dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="523dp"
         android:text="Driver Profile Edit"
         android:textAlignment="center"
-        android:textColor="#000000"
-        android:textColorHint="#000000"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         android:textSize="36sp" />
 
     <Button

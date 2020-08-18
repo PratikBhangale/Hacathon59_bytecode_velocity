@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".student.StudentProfile">
+    tools:context=".student.StudentProfile"
+    android:background="@drawable/background1">
 
     <TextView
         android:id="@+id/textView11"
@@ -17,7 +18,9 @@
         android:layout_marginTop="44dp"
         android:text="Student Profile"
         android:textAlignment="center"
-        android:textSize="36sp" />
+        android:textSize="36sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
 
     <TextView
         android:id="@+id/textView12"
@@ -28,7 +31,9 @@
         android:layout_marginTop="266dp"
         android:hint="Name"
         android:textAlignment="center"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
 
     <TextView
         android:id="@+id/textView13"
@@ -39,7 +44,9 @@
         android:layout_marginTop="348dp"
         android:hint="Bus route"
         android:textAlignment="center"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
 
     <TextView
         android:id="@+id/textView15"
@@ -50,7 +57,9 @@
         android:layout_marginBottom="31dp"
         android:text="Click to edit profile"
         android:textAlignment="center"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
 
     <TextView
         android:id="@+id/textView14"
@@ -61,5 +70,7 @@
         android:layout_marginTop="441dp"
         android:hint="Bus Stop"
         android:textAlignment="center"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
 </RelativeLayout>

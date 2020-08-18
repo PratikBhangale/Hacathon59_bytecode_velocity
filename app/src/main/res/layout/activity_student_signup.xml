@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".student.StudentSignup">
+    tools:context=".student.StudentSignup"
+    android:background="@drawable/background1">
 
     <EditText
         android:id="@+id/editTextEmailAddress2"
@@ -17,7 +18,9 @@
         android:layout_marginBottom="324dp"
         android:ems="10"
         android:hint="Email"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
 
     <EditText
         android:id="@+id/editTextTextPassword2"
@@ -28,7 +31,9 @@
         android:layout_marginBottom="240dp"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
 
     <Button
         android:id="@+id/button3"
@@ -37,16 +42,21 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="144dp"
-        android:text="Sign up" />
+        android:text="Sign up"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:background="#0018EE"/>
 
     <ProgressBar
         android:id="@+id/bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="541dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="277dp"
         android:layout_marginEnd="86dp"
+        android:layout_marginBottom="142dp"
         android:visibility="invisible" />
 
     <TextView
@@ -56,8 +66,10 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="86dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="195dp"
         android:text="Student Signup"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         android:textSize="36sp" />
 </RelativeLayout>

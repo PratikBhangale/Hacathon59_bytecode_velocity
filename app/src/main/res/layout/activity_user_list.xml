@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".driver.driver_list.UserListActivity">
+    tools:context=".driver.driver_list.UserListActivity"
+    android:background="@drawable/background1">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/driver_recycler_view"
@@ -21,7 +22,9 @@
         android:layout_marginBottom="91dp"
         android:text="TextView"
         android:textAlignment="center"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
 
     <TextView
         android:id="@+id/textView18"
@@ -34,6 +37,8 @@
         android:layout_marginBottom="41dp"
         android:text="TextView"
         android:textAlignment="center"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
 
 </RelativeLayout>

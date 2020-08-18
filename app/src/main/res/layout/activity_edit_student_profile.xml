@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".student.EditStudentProfile">
+    tools:context=".student.EditStudentProfile"
+    android:background="@drawable/background1">
 
     <EditText
         android:id="@+id/editTextPersonName"
@@ -15,7 +16,9 @@
         android:layout_marginBottom="373dp"
         android:ems="10"
         android:hint="Name"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
 
     <EditText
         android:id="@+id/editTextbusroute"
@@ -28,18 +31,23 @@
         android:layout_marginBottom="304dp"
         android:ems="10"
         android:hint="Bus route"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="308dp"
         android:layout_height="76dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="551dp"
         android:text="Student Profile Edit"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         android:textSize="36sp" />
 
     <EditText
@@ -51,14 +59,20 @@
         android:layout_marginBottom="230dp"
         android:ems="10"
         android:hint="Bus Stop"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="wrap_content"
+        android:layout_width="152dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="115dp"
-        android:text="Save Profile" />
+        android:background="#0022FF"
+        android:text="Save Profile"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20dp"/>
 </RelativeLayout>

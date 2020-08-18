@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".student.StudentLogin">
+    tools:context=".student.StudentLogin"
+    android:background="@drawable/background1">
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
@@ -17,7 +18,9 @@
         android:layout_marginBottom="324dp"
         android:ems="10"
         android:hint="Email"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -28,7 +31,9 @@
         android:layout_marginBottom="240dp"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
 
     <Button
         android:id="@+id/button"
@@ -37,7 +42,10 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="144dp"
-        android:text="Login" />
+        android:text="Login"
+        android:background="#001AFF"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
 
     <TextView
         android:id="@+id/textView3"
@@ -47,7 +55,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
         android:text="Driver Login"
-        android:textSize="36sp" />
+        android:textSize="36sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"/>
 
     <ProgressBar
         android:id="@+id/bar12"

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Chat.ChatActivity"
     android:orientation="vertical"
+    android:background="@drawable/background1"
     >
 
     <androidx.recyclerview.widget.RecyclerView
@@ -30,7 +31,9 @@
             android:layout_marginBottom="0dp"
             android:ems="10"
             android:hint="Message"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"/>
         <TextView
             android:layout_width="0dp"
             android:layout_height="0dp"

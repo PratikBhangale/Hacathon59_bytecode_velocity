@@ -10,12 +10,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.hacathonbeta.R;
-import com.example.hacathonbeta.student.StudentLogin;
-import com.example.hacathonbeta.student.StudentSignup;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -76,8 +73,8 @@ public class DriverLogin extends AppCompatActivity {
         mAuth.signInWithEmailAndPassword(email1,password1).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
+                bar1.setVisibility(View.INVISIBLE);
                 if(task.isSuccessful()){
-                    bar1.setVisibility(View.INVISIBLE);
                     gotohome();
                     Toast.makeText(DriverLogin.this, "You have successfully logged in.", Toast.LENGTH_SHORT).show();
                 }
@@ -86,6 +83,7 @@ public class DriverLogin extends AppCompatActivity {
                 }
             }
         });
+
 
     }
 

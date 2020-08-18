@@ -1,5 +1,6 @@
 package com.example.hacathonbeta;
 
+import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -13,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.hacathonbeta.Services.LocationService;
 import com.example.hacathonbeta.driver.DriverLogin;
 import com.example.hacathonbeta.student.StudentLogin;
 import com.google.android.gms.common.ConnectionResult;
@@ -38,7 +40,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         but1=(Button) findViewById(R.id.button1);
         but2=(Button) findViewById(R.id.button2);
+
     }
+
 
     private void gotoStudentlogin() {
         startActivity(new Intent(MainActivity.this, StudentLogin.class));

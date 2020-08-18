@@ -11,7 +11,7 @@ import java.util.Date;
 public class Driver implements Parcelable {
     private String name, bus;
     private @ServerTimestamp Date date = null;
-    private GeoPoint geoPoint;
+
 
 
     public Driver(){
@@ -22,7 +22,7 @@ public class Driver implements Parcelable {
         this.name = name;
         this.bus = bus;
         this.date = date;
-        this.geoPoint = geoPoint;
+
     }
 
     protected Driver(Parcel in) {
@@ -43,13 +43,6 @@ public class Driver implements Parcelable {
         }
     };
 
-    public GeoPoint getGeoPoint() {
-        return geoPoint;
-    }
-
-    public void setGeoPoint(GeoPoint geoPoint) {
-        this.geoPoint = geoPoint;
-    }
 
     public Date getDate() {
         return date;
